@@ -1,0 +1,362 @@
+/* DEFINO LA ANIMACION SUBIR */
+@keyframes subir {
+    from {
+      bottom: 0;
+    }
+    to {
+      bottom: 10px;
+    }
+}
+
+/* ESTILOS GENERALES DE LA PAGINA */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color4);
+
+}
+
+/* PALETA DE COLORES USADA EN LA PAGINA WEB */
+:root {
+    --color1: #FFFFFA; 
+    --color2: #515052;
+    --color3: #000103;
+    --color4: #191919;
+    --color5: #C6e3f7;
+}
+
+
+/* ESTILOS PARA EL MENU SUPERIOR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color4);
+    color: var(--color1);
+    margin-right: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);  
+}
+
+header .activo {
+    color: var(--color5);
+}
+
+ 
+/* ESTILOS PARA EL TITULO DEL MENU SUPERIOR */
+header h1 {
+    float: left;
+    position: relative;
+    left: 50px;
+}
+
+/* ESTILOS PARA LAS LISTAS EN GENERAL DEL MENU SUPERIOR */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILOS PARA LISTAS DEL MENU SUPERIOR */
+header nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* ESTILOS PARA LOS ENLACES DEL MENU SUPERIOR */
+header nav a {
+    color: var(--color1);
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    right: 50px;
+}
+
+header nav a:hover {
+    color: var(--color5);
+    transition: 0.3s;
+}
+
+
+/* ESTILOS PARA EL TEXTO DE LA PORTADA */
+.portada  p {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ESTILOS PARA LOS ENLACES DE LA PORTADA */
+.portada a {
+    position: absolute;
+    top: 85%;
+    left: 46.3%;
+    text-decoration: none;
+    color: var(--color1);
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color2);
+}
+
+/* ESTILOS PARA CUANDO PASAS EL RATÓN POR ENCIMA D LOS ENLACES DE LA PORTADA */
+.portada a:hover {
+    background: none;
+    border: 1px solid var(--color1);
+    color: white;
+    transition: 0.5s;
+}
+
+/* ESTILOS PARA LA IMAGEN DE PORTADA DE LA WEB  */
+.portada > .imagenes-portada > .Fondo-Web {
+    width: 100%;
+    height: 100vh;
+}
+
+/* ESTILOS PARA EL LOGO DE LA PORTADA */
+.portada > .imagenes-portada > .Logo {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    width: 150px;
+}
+
+/* ESTILOS GENERALES DE LAS SECCIÓN 2 */
+.section2 {
+    position: relative;
+    height: 40vh;
+    padding: 0 20px;
+    padding-bottom: 5%;
+}
+
+/* ESTILOS PARA LOS TITULOS DE LAS NOTICIAS DE LA SECCION 2 */
+.section2 > h2 {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+/* ESTILOS PARA LAS NOTICIAS DE LA SECCION 2 */
+.section2 .noticias {
+    display: flex;
+    justify-content: center;
+}
+
+/* ESTILOS PARA LA NOTICIA 1 DE LA SECCION 2 */
+.section2 .noticia1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  
+    margin-right: 20px;
+    background: var(--color3);
+    color: white;
+    cursor: pointer;
+}
+
+/* ESTILOS PARA CUANDO PASAS EL RATON SOBRE LA NOTICIA 1 DE LA SECCION 2 */
+.section2 .noticia1:hover {
+    position: relative;
+    bottom: 10px;
+    animation-name: subir;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+}
+
+/* ESTILOS PARA LA NOTICIA 2 DE LA SECCION 2 */
+.section2 .noticia2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+    color: white;
+    background-color: var(--color3);
+    cursor: pointer;
+}
+
+/* ESTILOS PARA CUANDO PASAS EL RATON SOBRE LA NOTICIA 2 DE LA SECCION 2 */
+.section2 .noticia2:hover {
+    position: relative;
+    bottom: 10px;
+    animation-name: subir;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* ESTILOS PARA LA NOTICIA 3 DE LA SECCION 2 */
+.section2 .noticia3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--color3);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* ESTILOS PARA CUANDO PASAS EL RATÓN SOBRE LA NOTICIA 3 DE LA SECCION 2 */
+.section2 .noticia3:hover {
+    position: relative;
+    bottom: 10px;
+    animation-name: subir;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* ESTILOS DE LA IMAGEN DE LA NOTICIA 1 DE LA SECCION 2 */
+.section2 .noticia1 > img  {
+    position: relative;
+    left: 30%;
+    width: 150px;
+}
+
+/* ESTILOS DE LA IMAGEN DE LA NOTICIA 2 DE LA SECCION 2  */
+.section2 .noticia2 > img {
+    position: relative;
+    left: 30%;
+    width: 150px;
+}
+
+/* ESTILOS DE LA IMAGEN DE LA NOTICIA 3 DE LA SECCION 2  */
+.section2 .noticia3 > img {
+    position: relative;
+    left: 30%;
+    width: 150px;
+}
+
+/* ESTILOS PARA LOS ENLACES DE LA SECCION 2 */
+.section2 > a {
+    position: relative;
+    left: 46%;
+    top: 10%;
+    text-decoration: none;
+    border: 1px solid var(--color5);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--color5);
+}
+
+/* ESTILOS PARA CUANDO PASAS EL RATON SOBRE LOS ENLACES DE LA SECCION 2 */
+.section2 > a:hover {
+    background-color: var(--color5);
+    color: black;
+    transition: 0.5s;
+}
+
+/* Estilo para la sección3 */
+.section3 {
+    background-color: black;
+    width: 100%;
+    height: 40vh;
+}
+  
+/* Estilo para el contenedor de texto */
+.texto {
+    background-color: var(--color4);
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+  
+/* Estilo para el título */
+.texto h1 {
+    text-align: center;
+    color: var(--color1);
+    text-transform: uppercase;
+}
+  
+/* Estilo para el texto normal */
+.texto p {
+    text-align: left;
+    color: var(--color1);
+}
+  
+/* Estilos de flexbox */
+.section3,
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.section4 {
+    background-color: var(--color4);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.section4 > div > img {
+    float: right;
+    width: 70px;
+    height: 70px;
+}
+  
+.card {
+    background-color: var(--color3);
+    border-radius: 10px;
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    
+}
+
+.card:hover {
+    position: relative;
+    bottom: 10px;
+    animation-name: subir;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+  
+.card h3{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+  
+.card p {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 350px;
+    text-align: justify;
+}
+
+footer {
+    background-color: var(--color3);
+    height: 10vh;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+footer p {
+    position: relative;
+    left: 10px;
+}

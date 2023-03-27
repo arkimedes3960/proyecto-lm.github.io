@@ -1,0 +1,98 @@
+body{
+	background-color: var(--color4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+
+*{
+	font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #FFFFFA; 
+    --color2: #515052;
+    --color3: #000103;
+    --color4: #191919;
+    --color5: #C6e3f7;
+
+}
+
+form{
+	width: 600px;
+	border: 2px solid black;
+	padding: 6rem;
+	background-color: black;
+	border: none;
+	border-radius: 20px;
+	color: aliceblue;
+}
+
+h2{
+	border: 2px solid  black;
+	width: 95%;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+label{
+	color: aliceblue;
+	font-size: 18px;
+	padding: 10px;
+}
+
+input{
+	display: block;
+	border: 2px solid black;
+	width: 95%;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+.boton{
+	float: right;
+	background-color: #749BE3;
+	padding: .5rem;
+	color: black;
+	border: none;
+	width: 40%;
+	border-radius: 5px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.boton:hover{
+	background-color: white;
+	color: black;
+
+}
+
+a{
+	padding: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	text-align: center;
+	margin: 10px;
+	float: left;
+	background-color: #8DD1FA;
+	padding: .5rem;
+	color: black;
+	border: none;
+	width: 40%;
+}
+a:hover{
+	background-color: white;
+	color: black;
+}
+a:visited{
+	text-decoration: none;
+}
+
